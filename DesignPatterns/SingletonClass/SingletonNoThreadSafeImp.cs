@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.SingletonClass
+﻿using System.Text;
+
+namespace DesignPatterns.SingletonClass
 {
     public sealed class SingletonNoThreadSafeImp
     {
