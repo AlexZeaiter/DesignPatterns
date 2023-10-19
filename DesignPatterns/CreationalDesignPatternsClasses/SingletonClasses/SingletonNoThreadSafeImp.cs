@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace DesignPatterns.SingletonClass
+namespace DesignPatterns.CreationalDesignPatternsClasses.SingletonClasses
 {
     public sealed class SingletonNoThreadSafeImp
     {
@@ -11,7 +11,7 @@ namespace DesignPatterns.SingletonClass
         {
             get
             {
-                if(instance == null)
+                if (instance == null)
                 {
                     instance = new SingletonNoThreadSafeImp();
                 }
@@ -24,11 +24,11 @@ namespace DesignPatterns.SingletonClass
             numberOfSingletonCalls++;
         }
         public int TotalNumberOfCalls
-        { 
-            get 
-            { 
-                return numberOfSingletonCalls; 
-            } 
+        {
+            get
+            {
+                return numberOfSingletonCalls;
+            }
         }
     }
 }

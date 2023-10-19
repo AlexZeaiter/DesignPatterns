@@ -1,8 +1,8 @@
-﻿namespace DesignPatterns.SingletonClass
+﻿namespace DesignPatterns.CreationalDesignPatternsClasses.SingletonClasses
 {
     public class ThreadSafetySingletonImp
     {
-        ThreadSafetySingletonImp() 
+        ThreadSafetySingletonImp()
         {
         }
         private static readonly object lockInst = new object();
@@ -12,7 +12,7 @@
         {
             get
             {
-                lock(lockInst)
+                lock (lockInst)
                 {
                     if (instance == null)
                     {

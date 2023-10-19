@@ -1,17 +1,17 @@
-﻿namespace DesignPatterns.SingletonClass
+﻿namespace DesignPatterns.CreationalDesignPatternsClasses.SingletonClasses
 {
     public class DotNetLazyTypeSingletonImp
     {
-        private DotNetLazyTypeSingletonImp() 
+        private DotNetLazyTypeSingletonImp()
         {
         }
         private static readonly Lazy<DotNetLazyTypeSingletonImp> lazy = new Lazy<DotNetLazyTypeSingletonImp>(() => new DotNetLazyTypeSingletonImp());
         private int numberOfSingletonCalls = 0;
         public static DotNetLazyTypeSingletonImp Instance
         {
-            get 
-            { 
-                return lazy.Value; 
+            get
+            {
+                return lazy.Value;
             }
         }
         public void callSingleton()

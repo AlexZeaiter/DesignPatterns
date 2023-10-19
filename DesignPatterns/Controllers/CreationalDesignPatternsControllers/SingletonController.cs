@@ -1,9 +1,9 @@
-﻿using DesignPatterns.SingletonClass;
+﻿using DesignPatterns.CreationalDesignPatternsClasses.SingletonClasses;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
 
-namespace DesignPatterns.Controllers
+namespace DesignPatterns.Controllers.CreationalDesignPatternsControllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -27,10 +27,10 @@ namespace DesignPatterns.Controllers
             {
                 var s = SingletonNoThreadSafeImp.Instance;
                 s.callSingleton();
-                var resultText = String.Format("This is call number: {0}", s.TotalNumberOfCalls);
+                var resultText = string.Format("This is call number: {0}", s.TotalNumberOfCalls);
                 result.Append(resultText).Append(Environment.NewLine);
             });
-            result.Append(String.Format("The total calls number: {0}", s1.TotalNumberOfCalls)).Append(Environment.NewLine);
+            result.Append(string.Format("The total calls number: {0}", s1.TotalNumberOfCalls)).Append(Environment.NewLine);
             return new JsonResult(result.ToString());
         }
 
@@ -52,10 +52,10 @@ namespace DesignPatterns.Controllers
             {
                 var s = ThreadSafetySingletonImp.Instance;
                 s.callSingleton();
-                var resultText = String.Format("This is call number: {0}", s.TotalNumberOfCalls);
+                var resultText = string.Format("This is call number: {0}", s.TotalNumberOfCalls);
                 result.Append(resultText).Append(Environment.NewLine);
             });
-            result.Append(String.Format("The total calls number: {0}", s1.TotalNumberOfCalls)).Append(Environment.NewLine);
+            result.Append(string.Format("The total calls number: {0}", s1.TotalNumberOfCalls)).Append(Environment.NewLine);
             return new JsonResult(result.ToString());
         }
 
@@ -77,10 +77,10 @@ namespace DesignPatterns.Controllers
             {
                 var s = DoubleCheckLockThreadSafetySingletonImp.Instance;
                 s.callSingleton();
-                var resultText = String.Format("This is call number: {0}", s.TotalNumberOfCalls);
+                var resultText = string.Format("This is call number: {0}", s.TotalNumberOfCalls);
                 result.Append(resultText).Append(Environment.NewLine);
             });
-            result.Append(String.Format("The total calls number: {0}", s1.TotalNumberOfCalls)).Append(Environment.NewLine);
+            result.Append(string.Format("The total calls number: {0}", s1.TotalNumberOfCalls)).Append(Environment.NewLine);
             return new JsonResult(result.ToString());
         }
 
@@ -102,10 +102,10 @@ namespace DesignPatterns.Controllers
             {
                 var s = DotNetLazyTypeSingletonImp.Instance;
                 s.callSingleton();
-                var resultText = String.Format("This is call number: {0}", s.TotalNumberOfCalls);
+                var resultText = string.Format("This is call number: {0}", s.TotalNumberOfCalls);
                 result.Append(resultText).Append(Environment.NewLine);
             });
-            result.Append(String.Format("The total calls number: {0}", s1.TotalNumberOfCalls)).Append(Environment.NewLine);
+            result.Append(string.Format("The total calls number: {0}", s1.TotalNumberOfCalls)).Append(Environment.NewLine);
             return new JsonResult(result.ToString());
         }
     }

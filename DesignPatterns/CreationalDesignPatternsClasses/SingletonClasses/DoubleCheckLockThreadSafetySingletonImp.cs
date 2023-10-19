@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.SingletonClass
+﻿namespace DesignPatterns.CreationalDesignPatternsClasses.SingletonClasses
 {
     public class DoubleCheckLockThreadSafetySingletonImp
     {
@@ -15,9 +15,9 @@
             {
                 if (instance == null)
                 {
-                    lock(lockInst)
+                    lock (lockInst)
                     {
-                        if(instance == null)
+                        if (instance == null)
                         {
                             instance = new DoubleCheckLockThreadSafetySingletonImp();
                         }
