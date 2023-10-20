@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses;
+using DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses.ConcreteBuilder;
 using DesignPatterns.CreationalDesignPatternsClasses.SingletonClasses;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
