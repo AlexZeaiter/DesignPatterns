@@ -14,7 +14,7 @@ namespace DesignPatterns.Controllers.CreationalDesignPatternsControllers
         /// Factory Pattern Demo
         /// </summary>
         [HttpGet]
-        [Route("Builder")]
+        [Route("Factory")]
         public IActionResult GetVehicleFactoryResult()
         {
             StringBuilder result = new StringBuilder();
