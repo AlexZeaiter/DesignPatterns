@@ -1,5 +1,10 @@
-﻿namespace DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses
+﻿using DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses.ConcreteProduct;
+
+namespace DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses
 {
+    /// <summary>
+    /// The 'Builder' abstract class
+    /// </summary>
     abstract public class VehicleBuilder
     {
         protected Vehicle vehicle;

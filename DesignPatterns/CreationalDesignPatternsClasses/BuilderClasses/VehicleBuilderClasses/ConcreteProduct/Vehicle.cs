@@ -1,7 +1,10 @@
 ﻿using System.Text;
 
-namespace DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses
+namespace DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses.ConcreteProduct
 {
+    /// <summary>
+    /// The 'Concrete Product' class
+    /// </summary>
     public class Vehicle
     {
         private string vehicleType;

@@ -1,11 +1,16 @@
-﻿namespace DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses
+﻿using DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses.ConcreteProduct;
+
+namespace DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses.ConcreteBuilder
 {
-    public class CarBuilder : VehicleBuilder
+    /// <summary>
+    /// The 'ConcreteBuilder' class
+    /// </summary>
+    public class ScooterBuilder : VehicleBuilder
     {
         private VehicleParts vehicleParts;
-        public CarBuilder(VehicleParts vehicleParts) 
+        public ScooterBuilder(VehicleParts vehicleParts)
         {
-            vehicle = new Vehicle("Car");
+            vehicle = new Vehicle("ScooterBuilder");
             this.vehicleParts = vehicleParts;
         }
         public override void BuildFrame()
@@ -18,7 +23,7 @@
         }
         public override void BuildWheels()
         {
-            vehicle["wheels"] = "4";
+            vehicle["wheels"] = "2";
         }
         public override void BuildDoors()
         {

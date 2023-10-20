@@ -1,5 +1,8 @@
 ﻿namespace DesignPatterns.CreationalDesignPatternsClasses.BuilderClasses.VehicleBuilderClasses
 {
+    /// <summary>
+    /// The 'Director' class
+    /// </summary>
     public class Shop
     {
         public void Construct(VehicleBuilder vehicleBuilder)
